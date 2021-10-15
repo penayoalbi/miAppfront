@@ -8,7 +8,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { MensajeComponent } from './componentes/mensaje/mensaje.component';
 import { ApiServiceService } from './helper/api-service.service';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { UsuarioServiceService } from './helper/usuario-service.service';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,13 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [HttpClient],
+  providers: [
+    HttpClient,
+    UsuarioServiceService,
+    ApiServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

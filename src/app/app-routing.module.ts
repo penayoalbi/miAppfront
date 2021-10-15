@@ -5,9 +5,8 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { MensajeComponent } from './componentes/mensaje/mensaje.component';
 
 const routes: Routes = [
-  {path:'login', component:LoginComponent},
-  {path: 'registro',component: RegistroComponent},
   {path: '', component: LoginComponent},
+  {path: 'registro',component: RegistroComponent},
   {path: 'mensaje', component: MensajeComponent}
 ];
 

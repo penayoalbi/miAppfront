@@ -1,12 +1,14 @@
 <p>login works!</p>
+
 <div class="container fluid">
-    <div class="body">
+    <div class="body"> 
+        
         <form class="login-form">
-            <input type="text" class="form-control" placeholder="Usuario" >
-            <input type="password" class="form-control" placeholder="Password"  >
-            <p>¿Olviste la contraseña?<a href="recuperar"> Click aquí</a></p>
-            <button type="button" (click)="login()"  class="btn btn-danger">Ingresar</button> 
+            <h1>Iniciar sesión</h1>
+            <input type="text" class="form-control" name="usuario" placeholder="Usuario" [(ngModel)]="usuario.usuario" >
+            <input type="password" class="form-control" name="pass" placeholder="Password" [(ngModel)]="usuario.pass">
+            <button type="button" (click)="login()" value="Aceptar" class="btn btn-danger">Ingresar</button> 
             <p>¿Todavía no estas registrado? <a href="registro"> Registrate!</a> </p> 
-        </form>
+        </form> 
     </div>
 </div>

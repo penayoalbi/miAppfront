@@ -10,13 +10,15 @@ import { MensajeComponent } from './componentes/mensaje/mensaje.component';
 import { ApiServiceService } from './helper/api-service.service';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
 import { UsuarioServiceService } from './helper/usuario-service.service';
+import { UsuariosComponent } from './componentes/usuarios/usuarios.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistroComponent,
-    MensajeComponent
+    MensajeComponent,
+    UsuariosComponent
   ],
   imports: [
     BrowserModule,
